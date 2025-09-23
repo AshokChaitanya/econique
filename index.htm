@@ -2,7 +2,7 @@
 <html lang="en">
   <script>
     fetch('header.htm')
-      .then(response=>response.text())
+      .then(response=>response.text()).then(data=>console.log(data)).
       .then(data=>document.getElementById('headerm').innerHTML = data)
       .catch(error=>console.error("Error loading the header:',error));
   </script>
