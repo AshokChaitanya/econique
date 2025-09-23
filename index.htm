@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script>
-    fetch('/header.htm')
-      .then(response=>response.text()).then(data=>alert(JSON.stringify(data))).
-      .then(data=>document.getElementById('headerm').innerHTML = data)
-      .catch(error=>console.error("Error loading the header:',error));
-  </script>
+ 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +8,17 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- <div id="headerm"></div>
+  <header>
+    <h1>Econique Essentials</h1>
+    <nav>
+      <ul class="header-menu">
+        <li><a href="index.htm">Home</a></li>
+        <li><a href="about-us.htm">About Us</a></li>
+        <li><a href="packaged-food.htm">Packaged Food</a></li>
+        <li><a href="handmade-bangles.html">Handmade Bangles</a></li>
+      </ul>
+    </nav>
+  </header>
   <main class="grid">
     <div class="card">
       <h2>Neem Soap</h2>
