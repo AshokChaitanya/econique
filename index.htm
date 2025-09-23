@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <script>
-    fetch('header.htm')
+    fetch('/header.htm')
       .then(response=>response.text()).then(data=>alert(JSON.stringify(data))).
       .then(data=>document.getElementById('headerm').innerHTML = data)
       .catch(error=>console.error("Error loading the header:',error));
